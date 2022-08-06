@@ -22,6 +22,12 @@ variable "policy_content" {
   type = "string"
 }
 
+variable "target_id" {
+  default = null
+  description = "The unique identifier (ID) of the root, organizational unit, or account number that you want to attach the policy to."
+  type = "string"
+}
+
 variable "tags" {
   default = {
     Name = "terraform-test-policy"

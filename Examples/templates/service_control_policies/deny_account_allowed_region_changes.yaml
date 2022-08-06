@@ -1,0 +1,9 @@
+Version: '2012-10-17'
+Statement:
+  - sid: DenyAccountRegionDisableEnable
+    effect: Deny
+    actions:
+      - 'account:EnableRegion'
+      - 'account:DisableRegion'
+    resources:
+      - '*'

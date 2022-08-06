@@ -5,7 +5,7 @@ variable "policy_name" {
 }
 
 variable "policy_description" {
-  default = ""
+  default = null
   description = "A description to assign to the policy."
   type = "string"
 }

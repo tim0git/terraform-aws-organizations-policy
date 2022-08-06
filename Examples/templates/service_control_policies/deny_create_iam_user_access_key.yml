@@ -1,0 +1,10 @@
+Version: '2012-10-17'
+Statement:
+  - sid: DenyIAMCreatingUsers
+    effect: Deny
+    actions:
+      - 'iam:CreateUser'
+      - 'iam:CreateAccessKey'
+    resources:
+      - '*'
+

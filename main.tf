@@ -11,6 +11,7 @@ resource "aws_organizations_policy" "this" {
 }
 
 resource "aws_organizations_policy_attachment" "this" {
+  for_each  = var.target_id
   policy_id = aws_organizations_policy.this.id
-  target_id = var.target_id
+  target_id = each.value
 }

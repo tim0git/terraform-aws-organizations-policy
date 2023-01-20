@@ -9,7 +9,7 @@ module "root_tagging_policy" {
     description = "Root tagging policy"
     policy_type = "TAG_POLICY"
     policy_content = jsonencode(local.cost_center_tagging_policy)
-    target_id = "r-xxxx"
+    target_id = ["r-xxxx"]
     tags = {
       Name = "root_tagging_policy"
       CostCenter  = "mst-001"

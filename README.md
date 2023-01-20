@@ -31,7 +31,7 @@ No modules.
 | <a name="input_policy_name"></a> [policy\_name](#input\_policy\_name) | The friendly name to assign to the policy. | `string` | n/a | yes |
 | <a name="input_policy_type"></a> [policy\_type](#input\_policy\_type) | The type of policy to create. Valid values are AISERVICES\_OPT\_OUT\_POLICY, BACKUP\_POLICY, SERVICE\_CONTROL\_POLICY (SCP), and TAG\_POLICY. Defaults to SERVICE\_CONTROL\_POLICY. | `string` | `"SERVICE_CONTROL_POLICY"` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | The tags to assign to the policy. | `map(string)` | <pre>{<br>  "Name": "terraform-test-policy"<br>}</pre> | no |
-| <a name="input_target_id"></a> [target\_id](#input\_target\_id) | The unique identifier (ID) of the root, organizational unit, or account number that you want to attach the policy to. | `string` | n/a | yes |
+| <a name="input_target_id"></a> [target\_id](#input\_target\_id) | The unique identifier (ID) of the root, organizational unit, or account number that you want to attach the policy to. | `list(string)` | n/a | yes |
 
 ## Outputs
 
